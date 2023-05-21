@@ -1,0 +1,13 @@
+server:
+  port: 15680
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-basic-service
+
+swagger:
+  controllerPackage: fdse.microservice.controller

@@ -1,0 +1,41 @@
+# HTTP Server
+server:
+  port: 12346  # HTTP (Tomcat) port
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-travel-service
+  datasource:
+    url: jdbc:mysql://${CONSIGN_MYSQL_HOST:172.16.17.38}:${CONSIGN_MYSQL_PORT:3306}/${CONSIGN_MYSQL_DATABASE:ts_travel_mysql}?useSSL=false
+    username: ${CONSIGN_MYSQL_USER:root}
+    password: ${CONSIGN_MYSQL_PASSWORD:passwordA123$}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+swagger:
+  controllerPackage: travel.controller
+
+train-service:
+  url: http://${TRAIN_SERVICE_HOST:ts-train-service}:${TRAIN_SERVICE_PORT:14567}
+
+order-service:
+  url: http://${ORDER_SERVICE_HOST:ts-order-service}:${ORDER_SERVICE_PORT:12031}
+
+route-service:
+  url: http://${ROUTE_SERVICE_HOST:ts-route-service}:${ROUTE_SERVICE_PORT:11178}
+
+basic-service:
+  url: http://${BASIC_SERVICE_HOST:ts-basic-service}:${BASIC_SERVICE_PORT:15680}
+
+seat-service:
+  url: http://${SEAT_SERVICE_HOST:ts-seat-service}:${SEAT_SERVICE_PORT:18898}

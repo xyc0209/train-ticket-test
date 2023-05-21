@@ -1,0 +1,13 @@
+server:
+  port: 18898
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-seat-service
+
+swagger:
+  controllerPackage: seat.controller

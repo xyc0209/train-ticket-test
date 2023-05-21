@@ -1,0 +1,25 @@
+server:
+  port: 12347
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-contacts-service
+  datasource:
+    url: jdbc:mysql://${CONTACTS_MYSQL_HOST:172.16.17.38}:${CONTACTS_MYSQL_PORT:3306}/${CONTACTS_MYSQL_DATABASE:ts_contacts_mysql}?useSSL=false
+    username: ${CONTACTS_MYSQL_USER:root}
+    password: ${CONTACTS_MYSQL_PASSWORD:passwordA123$}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+swagger:
+  controllerPackage: contacts.controller

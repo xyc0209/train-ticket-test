@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-station-service
+  datasource:
+    url: jdbc:mysql://${STATION_MYSQL_HOST:172.16.17.38}:${STATION_MYSQL_PORT:3306}/${STATION_MYSQL_DATABASE:ts_station_mysql}?useSSL=false
+    username: ${STATION_MYSQL_USER:root}
+    password: ${STATION_MYSQL_PASSWORD:passwordA123$}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+# HTTP Server
+server:
+  port: 12345  # HTTP (Tomcat) port
+
+swagger:
+  controllerPackage: fdse.microservice

@@ -1,0 +1,26 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${NACOS_ADDRS:172.16.17.37:8848}
+  application:
+    name: ts-train-service
+  datasource:
+    url: jdbc:mysql://${TRAIN_MYSQL_HOST:172.16.17.38}:${TRAIN_MYSQL_PORT:3306}/${TRAIN_MYSQL_DATABASE:ts_train_mysql}?useSSL=false
+    username: ${TRAIN_MYSQL_USER:root}
+    password: ${TRAIN_MYSQL_PASSWORD:passwordA123$}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+# HTTP Server
+server:
+  port: 14567  # HTTP (Tomcat) port
+
+swagger:
+  controllerPackage: train.controller

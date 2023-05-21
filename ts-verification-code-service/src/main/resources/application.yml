@@ -1,0 +1,13 @@
+server:
+  port: 15678  # HTTP (Tomcat) port
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 172.16.17.37:8848
+  application:
+    name: ts-verification-code-service
+
+swagger:
+  controllerPackage: verifycode.controller
