@@ -1,6 +1,6 @@
 package consign.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import consign.entity.ConsignRecord;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

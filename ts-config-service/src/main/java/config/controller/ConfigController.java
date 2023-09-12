@@ -1,7 +1,8 @@
 package config.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import config.entity.Config;
 import config.service.ConfigService;
 import org.slf4j.Logger;

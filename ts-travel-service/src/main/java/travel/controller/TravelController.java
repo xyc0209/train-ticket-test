@@ -1,7 +1,7 @@
 package travel.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.entity.TravelInfo;
 import edu.fudan.common.entity.TripAllDetailInfo;
 import edu.fudan.common.entity.TripInfo;

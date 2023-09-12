@@ -1,7 +1,7 @@
 package foodsearch.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.util.JsonUtils;
 import foodsearch.entity.*;
 import foodsearch.mq.RabbitSend;
@@ -20,7 +20,7 @@ import java.util.UUID;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
-@RequestMapping("/api/foodservice")
+@RequestMapping("/api/v1/foodservice")
 public class FoodController  extends MObject {
 
     @Autowired

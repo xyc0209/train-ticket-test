@@ -1,6 +1,6 @@
 package config.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import config.entity.Config;
 import org.springframework.data.repository.CrudRepository;
 

@@ -12,8 +12,5 @@ public interface SeatService {
     Response distributeSeat(Seat seatRequest, HttpHeaders headers);
     Response getLeftTicketOfInterval(Seat seatRequest, HttpHeaders headers);
 
-    Response getSeat(Seat seatRequest, HttpHeaders headers);
-    Response selectSeat(Seat seatRequest, HttpHeaders headers);
-    Response querySeatIfBooked(Seat seatRequest, HttpHeaders headers);
-    Response querySeatPOsition(Seat seatRequest, HttpHeaders headers);
+
 }

@@ -1,8 +1,8 @@
 package food_delivery.controller;
 
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.util.Response;
 import food_delivery.entity.DeliveryInfo;
 import food_delivery.entity.FoodDeliveryOrder;
@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import static org.springframework.http.ResponseEntity.ok;
 
 @RestController
-@RequestMapping("/api/fooddeliveryservice")
+@RequestMapping("/api/v1/fooddeliveryservice")
 public class FoodDeliveryController  extends MObject {
 
     @Autowired

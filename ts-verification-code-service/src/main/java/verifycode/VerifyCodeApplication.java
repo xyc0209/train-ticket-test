@@ -14,7 +14,7 @@ import org.springframework.web.client.RestTemplate;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@ServletComponentScan("com.septemberhx.common.filter")
+@ServletComponentScan("com.mbs.common.filter")
 public class VerifyCodeApplication {
     public static void main(String[] args) {
         SpringApplication.run(VerifyCodeApplication.class, args);

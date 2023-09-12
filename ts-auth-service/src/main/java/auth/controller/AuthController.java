@@ -2,8 +2,8 @@ package auth.controller;
 
 import auth.dto.AuthDto;
 import auth.service.UserService;
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.util.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -31,13 +31,13 @@ public class AuthController extends MObject {
      * @return
      */
     @GetMapping("/hello")
-//    @MRestApiType
+    @MRestApiType
     public String getHello() {
         return "hello";
     }
 
     @PostMapping
-//    @MRestApiType
+    @MRestApiType
     public HttpEntity<Response> createDefaultUser(@RequestBody AuthDto authDto) {
         logger.info("[createDefaultUser][Create default auth user with authDto][AuthDto: {}]", authDto.toString());
         userService.createDefaultAuthUser(authDto);

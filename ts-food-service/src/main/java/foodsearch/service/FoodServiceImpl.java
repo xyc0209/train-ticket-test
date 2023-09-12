@@ -41,7 +41,6 @@ public class FoodServiceImpl implements FoodService {
     @Autowired
     private RabbitSend sender;
 
-    private String rabbitMqAddress = "localhost:5672";
 
     @Autowired
     private DiscoveryClient discoveryClient;

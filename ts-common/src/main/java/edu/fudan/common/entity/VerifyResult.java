@@ -1,4 +1,4 @@
-package rebook.entity;
+package edu.fudan.common.entity;
 
 import lombok.Data;
 

@@ -1,7 +1,7 @@
 package fdse.microservice.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.util.Response;
 import fdse.microservice.entity.*;
 import fdse.microservice.service.StationService;

@@ -1,6 +1,6 @@
 package fdse.microservice.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import fdse.microservice.entity.Station;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;

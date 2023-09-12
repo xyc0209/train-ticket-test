@@ -1,7 +1,7 @@
 package contacts.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import contacts.entity.*;
 import edu.fudan.common.util.Response;
 import org.slf4j.Logger;

@@ -19,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @IntegrationComponentScan
 @EnableSwagger2
 @EnableDiscoveryClient
-@ServletComponentScan("com.septemberhx.common.filter")
+@ServletComponentScan("com.mbs.common.filter")
 public class StationApplication {
 
 	public static void main(String[] args) {

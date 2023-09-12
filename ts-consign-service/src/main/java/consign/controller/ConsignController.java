@@ -1,7 +1,8 @@
 package consign.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import consign.entity.Consign;
 import consign.service.ConsignService;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
 package food_delivery.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 
 import food_delivery.entity.FoodOrder;
 import org.springframework.data.repository.CrudRepository;
@@ -12,9 +12,9 @@ import java.util.Optional;
 public interface FoodOrderRepository extends CrudRepository<FoodOrder, String> {
 
     @Override
-    @Loggable
+//    @Loggable
     FoodOrder save(FoodOrder s);
 
-    @Loggable
+//    @Loggable
     Optional<FoodOrder> findById(String id);
 }

@@ -1,6 +1,6 @@
 package order.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import order.entity.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.CrudRepository;

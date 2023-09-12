@@ -54,7 +54,7 @@ public class Trip {
     @NotNull
     private String endTime;
 
-    public Trip(edu.fudan.common.entity.TripId tripId, String trainTypeName, String startStationName, String stationsName, String terminalStationName, String startTime, String endTime) {
+    public Trip(TripId tripId, String trainTypeName, String startStationName, String stationsName, String terminalStationName, String startTime, String endTime) {
         this.tripId = tripId;
         this.trainTypeName = trainTypeName;
         this.startStationName = StringUtils.String2Lower(startStationName);

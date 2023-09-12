@@ -1,6 +1,6 @@
 package travel.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import edu.fudan.common.entity.TripId;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

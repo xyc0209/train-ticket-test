@@ -1,7 +1,9 @@
 package consignprice.controller;
 
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+
+
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import consignprice.entity.ConsignPrice;
 import consignprice.service.ConsignPriceService;
 import org.slf4j.Logger;

@@ -6,8 +6,8 @@ import auth.entity.User;
 import auth.exception.UserOperationException;
 import auth.service.TokenService;
 import auth.service.UserService;
-import com.septemberhx.mclient.annotation.MRestApiType;
-import com.septemberhx.mclient.base.MObject;
+import com.mbs.mclient.annotation.MRestApiType;
+import com.mbs.mclient.base.MObject;
 import edu.fudan.common.util.Response;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,13 +36,13 @@ public class UserController extends MObject {
     private static final Logger logger = LoggerFactory.getLogger(UserController.class);
 
     @GetMapping("/hello")
-//    @MRestApiType
+    @MRestApiType
     public Object getHello() {
         return "Hello";
     }
 
     @PostMapping("/login")
-//    @MRestApiType
+    @MRestApiType
     public ResponseEntity<Response> getToken(@RequestBody BasicAuthDto dao , @RequestHeader HttpHeaders headers) {
         logger.info("Login request of username: {}", dao.getUsername());
         try {
@@ -55,14 +55,14 @@ public class UserController extends MObject {
     }
 
     @GetMapping
-//    @MRestApiType
+    @MRestApiType
     public ResponseEntity<List<User>> getAllUser(@RequestHeader HttpHeaders headers) {
         logger.info("[getAllUser][Get all users]");
         return ResponseEntity.ok().body(userService.getAllUser(headers));
     }
 
     @DeleteMapping("/{userId}")
-//    @MRestApiType
+    @MRestApiType
     public ResponseEntity<Response> deleteUserById(@PathVariable String userId, @RequestHeader HttpHeaders headers) {
         logger.info("[deleteUserById][Delete user][userId: {}]", userId);
         return ResponseEntity.ok(userService.deleteByUserId(userId, headers));

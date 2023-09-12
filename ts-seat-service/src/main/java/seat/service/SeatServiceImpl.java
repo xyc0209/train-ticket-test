@@ -206,22 +206,22 @@ public class SeatServiceImpl implements SeatService {
         return new Response<>(1, "Get Left Ticket of Internal Success", numOfLeftTicket);
     }
 
-    @Override
+
     public Response getSeat(Seat seatRequest, HttpHeaders headers) {
         return null;
     }
 
-    @Override
+
     public Response selectSeat(Seat seatRequest, HttpHeaders headers) {
         return null;
     }
 
-    @Override
+
     public Response querySeatIfBooked(Seat seatRequest, HttpHeaders headers) {
         return null;
     }
 
-    @Override
+
     public Response querySeatPOsition(Seat seatRequest, HttpHeaders headers) {
         return null;
     }

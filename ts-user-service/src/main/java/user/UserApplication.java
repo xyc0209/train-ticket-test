@@ -22,7 +22,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @IntegrationComponentScan
 @EnableDiscoveryClient
 @EnableSwagger2
-@ServletComponentScan("com.septemberhx.common.filter")
+@ServletComponentScan("com.mbs.common.filter")
 public class UserApplication {
     public static void main(String[] args) {
         SpringApplication.run(UserApplication.class, args);

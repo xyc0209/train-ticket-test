@@ -1,6 +1,6 @@
 package consignprice.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import consignprice.entity.ConsignPrice;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

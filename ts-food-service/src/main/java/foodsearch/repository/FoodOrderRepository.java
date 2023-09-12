@@ -1,6 +1,6 @@
 package foodsearch.repository;
 
-import com.septemberhx.mclient.annotation.Loggable;
+import com.mbs.mclient.annotation.Loggable;
 import foodsearch.entity.FoodOrder;
 
 import org.springframework.data.repository.CrudRepository;
