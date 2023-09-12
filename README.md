@@ -1,4 +1,4 @@
-# Train Ticket- Test
+# Train Ticket-Test
 It consists of 18 service modules and 1 public module separated from the train-ticket system for experimental purposes.
 # Train Ticket：A Benchmark Microservice System
 # <img src="./image/logo.png">
